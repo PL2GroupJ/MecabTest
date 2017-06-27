@@ -6,7 +6,7 @@ import java.io.File;
 public class MecabTest {
     static {
         try {
-            File f = new File("/Users/haradakyouhei/Downloads/mecab-java/libMeCab.so"); // Select libMeCab.so path
+            File f = new File("/Users/haradakyouhei/IdeaProjects/Haiku/lib/libMeCab.so"); // Select libMeCab.so path
             System.load(f.toString());
         } catch (UnsatisfiedLinkError e) {
             System.err.println("Cannot load the example native code.\nMake sure your LD_LIBRARY_PATH contains \'.\'\n" + e);
